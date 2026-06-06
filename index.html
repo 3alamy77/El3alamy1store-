@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EL3ALAMY STORE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#081120;
+color:white;
+min-height:100vh;
+}
+
+header{
+background:linear-gradient(135deg,#002b7f,#0048d6);
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,119,255,.4);
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+}
+
+.subtitle{
+margin-top:8px;
+color:#d7e5ff;
+}
+
+.top-links{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+padding:15px;
+}
+
+.top-links a{
+background:#12327d;
+padding:12px 15px;
+border-radius:12px;
+color:white;
+text-decoration:none;
+font-weight:700;
+}
+
+.notice{
+margin:15px;
+padding:15px;
+background:#101c36;
+border-radius:15px;
+text-align:center;
+border:1px solid #1f4db6;
+}
+
+.games{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+padding:15px;
+}
+
+.game{
+background:#101c36;
+padding:20px;
+border-radius:15px;
+text-align:center;
+font-weight:700;
+cursor:pointer;
+border:1px solid #1f4db6;
+}
+
+.game:hover{
+transform:scale(1.02);
+}
+
+.section{
+display:none;
+padding:15px;
+}
+
+.tabs{
+display:flex;
+overflow:auto;
+gap:10px;
+margin-bottom:15px;
+}
+
+.tab-btn{
+background:#12327d;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:10px;
+font-weight:700;
+cursor:pointer;
+white-space:nowrap;
+}
+
+.card{
+background:#101c36;
+padding:15px;
+border-radius:15px;
+margin-bottom:15px;
+border:1px solid #1f4db6;
+display:none;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 0;
+border-bottom:1px solid #22345f;
+}
+
+.item:last-child{
+border-bottom:none;
+}
+
+.order{
+background:#0077ff;
+padding:8px 12px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-size:14px;
+font-weight:700;
+}
+
+h2{
+margin-bottom:15px;
+}
+
+footer{
+padding:25px;
+text-align:center;
+margin-top:30px;
+background:#050b1a;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+EL3ALAMY STORE
+</div>
+
+<div class="subtitle">
+إدارة سعيد
+</div>
+
+</header>
+
+<div class="top-links">
+
+<a href="https://wa.me/201202671156">
+دعم العملاء
+</a>
+
+<a href="https://whatsapp.com/channel/0029VbAMEH005MUbf5vJbx24">
+إثباتات الشحن
+</a>
+
+<a href="https://chat.whatsapp.com/HcRseIbSlrl473PgKi3SO5?mode=gi_t">
+الجروب الأساسي
+</a>
+
+</div>
+
+<div class="notice">
+
+🔥 شحن ألعاب وخدمات رقمية يومياً
+
+<br><br>
+
+💰 فودافون كاش:
+01023595183
+
+</div>
+
+<div class="games">
+
+<div class="game" onclick="showGame('pubg')">
+🎮 PUBG MOBILE
+</div>
+
+<div class="game" onclick="showGame('ff')">
+🔥 FREE FIRE
+</div>
+
+<div class="game" onclick="showGame('pes')">
+⚽ eFOOTBALL
+</div>
+
+<div class="game" onclick="showGame('tiktok')">
+🎵 TIKTOK
+</div>
+
+</div>
+<!-- PUBG -->
+
+<div id="pubg" class="section">
+
+<h2>🎮 PUBG MOBILE</h2>
+
+<div class="tabs">
+<button class="tab-btn" onclick="showTab('uc')">الشدات UC</button>
+<button class="tab-btn" onclick="showTab('boost')">الازدهار</button>
+<button class="tab-btn" onclick="showTab('prime')">PRIME</button>
+<button class="tab-btn" onclick="showTab('primeplus')">PRIME PLUS</button>
+</div>
+
+<div id="uc" class="card">
+
+<div class="item"><span>30 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 30 UC">اشحن</a></div>
+
+<div class="item"><span>60 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 60 UC">اشحن</a></div>
+
+<div class="item"><span>90 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 90 UC">اشحن</a></div>
+
+<div class="item"><span>120 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 120 UC">اشحن</a></div>
+
+<div class="item"><span>180 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 180 UC">اشحن</a></div>
+
+<div class="item"><span>325 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 325 UC">اشحن</a></div>
+
+<div class="item"><span>385 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 385 UC">اشحن</a></div>
+
+<div class="item"><span>660 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 660 UC">اشحن</a></div>
+
+<div class="item"><span>1320 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 1320 UC">اشحن</a></div>
+
+<div class="item"><span>1800 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 1800 UC">اشحن</a></div>
+
+<div class="item"><span>3850 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 3850 UC">اشحن</a></div>
+
+<div class="item"><span>8100 UC</span><a class="order" href="https://wa.me/201202671156?text=أريد شحن 8100 UC">اشحن</a></div>
+
+</div>
+
+<div id="boost" class="card">
+
+<div class="item">
+<span>ازدهار الشدات - 55 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد ازدهار الشدات">اشحن</a>
+</div>
+
+<div class="item">
+<span>ازدهار الماتيريال - 150 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد ازدهار الماتيريال">اشحن</a>
+</div>
+
+<div class="item">
+<span>ازدهار جواهر الشعار الخرافي - 250 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد ازدهار جواهر الشعار الخرافي">اشحن</a>
+</div>
+
+</div>
+
+<div id="prime" class="card">
+
+<div class="item">
+<span>برايم شهر - 55 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime شهر">اشحن</a>
+</div>
+
+<div class="item">
+<span>برايم 3 شهور - 160 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime 3 شهور">اشحن</a>
+</div>
+
+<div class="item">
+<span>برايم 6 شهور - 310 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime 6 شهور">اشحن</a>
+</div>
+
+<div class="item">
+<span>برايم سنة - 600 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime سنة">اشحن</a>
+</div>
+
+</div>
+
+<div id="primeplus" class="card">
+
+<div class="item">
+<span>برايم بلص شهر - 470 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime Plus شهر">اشحن</a>
+</div>
+
+<div class="item">
+<span>برايم بلص 3 شهور - 1400 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime Plus 3 شهور">اشحن</a>
+</div>
+
+<div class="item">
+<span>برايم بلص 6 شهور - 2800 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime Plus 6 شهور">اشحن</a>
+</div>
+
+<div class="item">
+<span>برايم بلص سنة - 5600 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=أريد Prime Plus سنة">اشحن</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- FREE FIRE -->
+
+<div id="ff" class="section">
+
+<h2>🔥 FREE FIRE</h2>
+
+<div class="tabs">
+<button class="tab-btn" onclick="showFF('diamonds')">الجواهر</button>
+<button class="tab-btn" onclick="showFF('membership')">العضويات</button>
+</div>
+
+<div id="diamonds" class="card">
+
+<div class="item"><span>50 💎 - 30 جنيه</span><a class="order" href="https://wa.me/201202671156?text=50 Diamond">اشحن</a></div>
+
+<div class="item"><span>100 💎 - 55 جنيه</span><a class="order" href="https://wa.me/201202671156?text=100 Diamond">اشحن</a></div>
+
+<div class="item"><span>210 💎 - 110 جنيه</span><a class="order" href="https://wa.me/201202671156?text=210 Diamond">اشحن</a></div>
+
+<div class="item"><span>310 💎 - 170 جنيه</span><a class="order" href="https://wa.me/201202671156?text=310 Diamond">اشحن</a></div>
+
+<div class="item"><span>520 💎 - 270 جنيه</span><a class="order" href="https://wa.me/201202671156?text=520 Diamond">اشحن</a></div>
+
+<div class="item"><span>1060 💎 - 540 جنيه</span><a class="order" href="https://wa.me/201202671156?text=1060 Diamond">اشحن</a></div>
+
+<div class="item"><span>2200 💎 - 1050 جنيه</span><a class="order" href="https://wa.me/201202671156?text=2200 Diamond">اشحن</a></div>
+
+</div>
+
+<div id="membership" class="card">
+
+<div class="item">
+<span>عضوية أسبوعية مخففة - 20 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=عضوية أسبوعية مخففة">اشحن</a>
+</div>
+
+<div class="item">
+<span>عضوية أسبوعية - 100 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=عضوية أسبوعية">اشحن</a>
+</div>
+
+<div class="item">
+<span>عضوية شهرية - 530 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=عضوية شهرية">اشحن</a>
+</div>
+
+</div>
+
+</div>
+<!-- eFootball -->
+
+<div id="pes" class="section">
+
+<h2>⚽ eFootball</h2>
+
+<div class="card" style="display:block;">
+
+<div class="item">
+<span>130 Coins - 70 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=130 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>300 Coins - 170 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=300 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>550 Coins - 280 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=550 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>750 Coins - 370 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=750 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>1040 Coins - 500 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=1040 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>2130 Coins - 980 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=2130 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>3250 Coins - 1450 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=3250 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>5700 Coins - 2450 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=5700 Coins">اشحن</a>
+</div>
+
+<div class="item">
+<span>12800 Coins - 5150 جنيه</span>
+<a class="order" href="https://wa.me/201202671156?text=12800 Coins">اشحن</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- TikTok -->
+
+<div id="tiktok" class="section">
+
+<h2>🎵 TikTok Coins</h2>
+
+<div class="card" style="display:block;">
+
+<p>الحد الأدنى للشحن 30 Coin</p>
+
+<br>
+
+<p>سعر الكوين الواحد = 0.67 جنيه</p>
+
+<br>
+
+<input
+id="coins"
+type="number"
+placeholder="اكتب عدد الكوينز"
+style="
+width:100%;
+padding:15px;
+border-radius:10px;
+border:none;
+font-size:18px;
+"
+oninput="calcTikTok()">
+
+<br><br>
+
+<h3 id="result">
+السعر: 0 جنيه
+</h3>
+
+<br>
+
+<a
+id="tiktokBtn"
+class="order"
+href="https://wa.me/201202671156">
+اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>EL3ALAMY STORE</h2>
+
+<p>إدارة سعيد</p>
+
+<br>
+
+<p>
+📞 دعم العملاء:
+01202671156
+</p>
+
+<br>
+
+<p>
+💰 فودافون كاش:
+01023595183
+</p>
+
+</footer>
+
+<script>
+
+function showGame(id){
+
+document.querySelectorAll('.section').forEach(function(sec){
+sec.style.display='none';
+});
+
+document.getElementById(id).style.display='block';
+
+window.scrollTo({
+top:350,
+behavior:'smooth'
+});
+
+}
+
+function showTab(id){
+
+document.getElementById('uc').style.display='none';
+document.getElementById('boost').style.display='none';
+document.getElementById('prime').style.display='none';
+document.getElementById('primeplus').style.display='none';
+
+document.getElementById(id).style.display='block';
+
+}
+
+function showFF(id){
+
+document.getElementById('diamonds').style.display='none';
+document.getElementById('membership').style.display='none';
+
+document.getElementById(id).style.display='block';
+
+}
+
+function calcTikTok(){
+
+let coins =
+document.getElementById('coins').value;
+
+let total =
+coins * 0.67;
+
+document.getElementById('result').innerHTML =
+"السعر: " +
+total.toFixed(2) +
+" جنيه";
+
+document.getElementById('tiktokBtn').href =
+"https://wa.me/201202671156?text=أريد شحن " +
+coins +
+" TikTok Coin";
+
+}
+
+</script>
+
+</body>
+</html>
